@@ -43,6 +43,22 @@ else
     echo "Il plugin zsh-autosuggestions è già installato."
 fi
 
+# Installo il plugin you-should-use
+if [ ! -d "$ZSH_CUSTOM/plugins/you-should-use" ]; then
+    echo "Installazione del plugin you-should-use..."
+    git clone https://github.com/MichaelAquilina/zsh-you-should-use.git $ZSH_CUSTOM/plugins/you-should-use
+else
+    echo "Il plugin you-should-use è già installato."
+fi
+
+# Installo il plugin zsh-bat
+if [ ! -d "$ZSH_CUSTOM/plugins/zsh-bat" ]; then
+    echo "Installazione del plugin yzsh-bat..."
+    git clone https://github.com/fdellwing/zsh-bat.git $ZSH_CUSTOM/plugins/zsh-bat
+else
+    echo "Il plugin zsh-bat è già installato."
+fi
+
 # Installo i font
 if [ ! -d "fonts" ]; then
     echo "Installazione dei Powerline Fonts..."
